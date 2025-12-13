@@ -62,7 +62,6 @@ export type CorrectQuestion = {
   QID: string;
   Question: string;
   correctAnswer: string;
-  answers: {};
 };
 
 export type InCorrectQuestion = {
@@ -70,7 +69,6 @@ export type InCorrectQuestion = {
   Question: string;
   inCorrectAnswer: string;
   correctAnswer: string;
-  answers: {};
 };
 
 export type QuestionResult = {
