@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         code: 400,
-        message: "Invalid JSON Data",
+        message: (e as Error)?.message || "Invalid JSON Data",
       },
       { status: 400 }
     );
@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         code: 500,
-        message:  (e as Error).message || "internal server error",
+        message:  (e as Error)?.message || "internal server error",
       },
       { status: 500 }
     );
