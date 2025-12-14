@@ -8,13 +8,13 @@ import { signOut } from "next-auth/react";
 import ProfileSettings from "./profile-settings";
 import ChangePassword from "./change-password";
 import {
-  AccountSettingsContent,
+  AccountSettingsContentType,
   SettingsRoutes,
 } from "../_types/account-settings";
 
 export default function AccountSettingsContent({
   user,
-}: AccountSettingsContent) {
+}: AccountSettingsContentType) {
   // States
   const [currentRoute, setCurrentRoute] = useState<SettingsRoutes>("profile");
   

@@ -4,7 +4,7 @@ import z from "zod";
 
 export type SettingsRoutes = "profile" | "change password";
 
-export type AccountSettingsContent = {
+export type AccountSettingsContentType = {
   user?: User["user"];
 };
 
