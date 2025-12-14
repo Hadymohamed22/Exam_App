@@ -163,7 +163,7 @@ exam-app/
 
 ## 🌐 Live Demo
 
-🔗 [Live Demo](#) *(Add your deployment URL here)*
+🔗 [Live Demo](https://exam-app1.netlify.app/) 
 
 ## 📝 Notes
 
