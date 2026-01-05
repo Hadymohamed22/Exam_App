@@ -21,6 +21,7 @@ export async function middleware(req: NextRequest) {
     )
   ) {
     if (token) return NextResponse.next();
+    
     const params = new URLSearchParams();
     params.set("callback", req.nextUrl.pathname);
 
