@@ -32,7 +32,7 @@ export default function ExamTimer({
 
         return prev - 1;
       });
-    }, 1000 * 60);
+    }, 1000);
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
